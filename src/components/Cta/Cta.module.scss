@@ -1,0 +1,77 @@
+.cta {
+  display: grid;
+
+  @media (width >= 1024px) {
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: repeat(2, minmax(464px, 540px));
+    column-gap: 16px;
+    justify-content: space-between;
+  }
+
+  @media (width <= 1023.98px) {
+    row-gap: 32px;
+  }
+
+  &_content {
+    @media (width >= 1024px) and (width <= 1199.98px) {
+      max-width: 400px;
+    }
+  }
+
+  &_title {
+    @media (width >= 1024px) {
+      font-size: 56px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    @media (width <= 1023.98px) {
+      font-weight: 500;
+    }
+
+    @media (width >= 1024px) and (width <= 1199.98px) {
+      font-size: 32px;
+      line-height: 1.313;
+    }
+
+    @media (width >= 576px) and (width <= 1023.98px) {
+      max-width: 560px;
+      font-size: 28px;
+      line-height: 1.5;
+    }
+
+    @media (width <= 575.98px) {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  }
+
+  &_descr {
+    color: var(--gray);
+
+    @media (width >= 1024px) {
+      margin-top: 30px;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    @media (width <= 1023.98px) {
+      margin-top: 16px;
+    }
+
+    @media (width >= 576px) and (width <= 1023.98px) {
+      font-size: 18px;
+      line-height: 1.778;
+    }
+
+    @media (width <= 575.98px) {
+      padding-right: 24px;
+    }
+  }
+
+  &_form {
+    align-self: start;
+    padding: 16px;
+    background: var(--light);
+  }
+}

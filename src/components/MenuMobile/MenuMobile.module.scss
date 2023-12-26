@@ -1,0 +1,103 @@
+.menu {
+  position: relative;
+
+  @media (width >= 1024px) {
+    display: none;
+  }
+
+  &_nav {
+    position: absolute;
+    top: calc(100% + 16px);
+    right: 0;
+    display: grid;
+    row-gap: 24px;
+    width: min(328px, calc(100vw - 2 * var(--gap)));
+    padding: 24px;
+    visibility: hidden;
+    background: var(--white);
+    border: 1px solid var(--light-extra);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 30%);
+    opacity: 0;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    transition-property: transform, opacity, visibility;
+    transform: translate3d(0, -16px, 0);
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &_hamb {
+    $hamb: &;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--green);
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    transition: background-color 250ms ease-in-out;
+
+    &_icon {
+      top: 14px;
+      left: 13px;
+
+      &,
+      &::before,
+      &::after {
+        position: absolute;
+        display: block;
+        width: 12px;
+        height: 2px;
+        content: '';
+        background-color: var(--black);
+        border-radius: 2px;
+        transition: all 250ms ease-in-out;
+      }
+
+      &::before {
+        top: 4px;
+      }
+
+      &::after {
+        top: 8px;
+      }
+    }
+
+    &.active {
+      background-color: var(--black);
+
+      #{$hamb}_icon {
+        top: 18px;
+        transform: rotate(45deg);
+
+        &,
+        &::before,
+        &::after {
+          background-color: var(--white);
+        }
+
+        &::before {
+          top: 0;
+          opacity: 0;
+        }
+
+        &::after {
+          top: 0;
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+
+  &_btn {
+    @media (width >= 576px) {
+      display: none;
+    }
+  }
+}

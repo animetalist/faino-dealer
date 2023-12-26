@@ -1,0 +1,29 @@
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.429;
+  color: var(--white);
+  text-align: center;
+  background: var(--black);
+  border-radius: 50px;
+  transition: background-color 250ms ease-in-out;
+
+  &:not(.small) {
+    padding: 16px 32px;
+  }
+
+  &.small {
+    padding: 10px 24px;
+  }
+
+  &[disabled] {
+    background-color: var(--gray-light);
+  }
+
+  &:not([disabled]) {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--gray-deep);
+    }
+  }
+}

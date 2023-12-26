@@ -1,0 +1,79 @@
+.hero {
+  background-color: var(--green);
+  background-repeat: no-repeat;
+  background-position: left 417px bottom -171px;
+  background-size: 1472px;
+
+  @media (width >= 1200px) {
+    background-position: left calc(50vw - 223px) bottom -171px;
+    background-size: max(1440px, 180vh);
+  }
+
+  @media (width >= 1024px) and (width <= 1199.98px) and (height >= 1024px) {
+    background-position: left 310px bottom;
+    background-size: 1860px;
+  }
+
+  @media (width >= 576px) and (width <= 1023.98px) {
+    background-position: left 159px bottom calc(-440px + 20vh);
+    background-size: 1514px;
+  }
+
+  @media (width <= 575.98px) {
+    background-position: left calc(50% - 30px) bottom -298px;
+    background-size: 808px;
+  }
+
+  &_inner {
+    display: grid;
+    row-gap: 16px;
+    align-content: center;
+    justify-items: start;
+
+    @media (width >= 576px) {
+      padding-top: 180px;
+      padding-bottom: 152px;
+    }
+
+    @media (width >= 1024px) {
+      min-height: 100svh;
+    }
+
+    @media (width >= 576px) and (width <= 1023.98px) {
+      min-height: calc(100svh - 100px);
+    }
+
+    @media (width <= 575.98px) {
+      min-height: calc(100svh - 78px);
+      padding-top: 112px;
+      padding-bottom: 134px;
+    }
+  }
+
+  &_title {
+    @media (width >= 1024px) {
+      max-width: 740px;
+    }
+
+    @media (width >= 576px) and (width <= 1023.98px) {
+      max-width: 620px;
+    }
+  }
+
+  &_descr {
+    max-width: 560px;
+    margin-bottom: 16px;
+    color: var(--green-dark);
+
+    @media (width >= 1024px) {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    @media (width >= 576px) and (width <= 1023.98px) {
+      max-width: 440px;
+      font-size: 18px;
+      line-height: 1.778;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.menu {
+  display: grid;
+
+  &.desktop {
+    grid-auto-flow: column;
+    column-gap: 8px;
+    justify-content: start;
+    margin-right: auto;
+
+    @media (width <= 1023.98px) {
+      display: none;
+    }
+  }
+
+  &.mobile {
+    row-gap: 12px;
+    margin: -6px -8px;
+  }
+
+  &_link {
+    display: block;
+    padding: 6px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.429;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--gray-deep);
+    }
+  }
+}

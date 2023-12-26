@@ -1,0 +1,45 @@
+{
+  "Header": {
+    "btn": "Comandați un apel",
+    "locale": "{locale, select, uk {Ucraineană} ro {Românesc} other {Unknown}}"
+  },
+  "Hero": {
+    "title": "Descoperiți cele mai bune piese de schimb pentru utilaje specializate",
+    "descr": "De la o gamă largă de produse până la piese de schimb originale, oferim soluții rapide și personalizate pentru nevoile dumneavoastră în materie de utilaje. Experimentați suportul nostru expert și serviciile noastre personalizate astăzi!",
+    "btn": "Aflați mai multe"
+  },
+  "Brands": {
+    "title": "Noi cooperăm cu"
+  },
+  "About": {
+    "badge": "Despre noi",
+    "intro": "Faino Deliveri este mai mult decât un simplu furnizor de piese de schimb, este cheia pentru buna funcționare a utilajelor dumneavoastră. Lucrăm cu o conștientizare a importanței fiecărui detaliu.",
+    "descr": "<p>Activitatea noastră se bazează pe produse de înaltă calitate, livrare rapidă și servicii excepționale pentru clienți.</p><p>Echipa noastră este pregătită să vă ajute să găsiți piesele de schimb perfecte pentru echipamentele dumneavoastră specializate.</p>"
+  },
+  "Advantages": {
+    "badge": "Avantajele noastre",
+    "title": "Avem avantaje față de concurenții noștri"
+  },
+  "Catalog": {
+    "badge": "Sortiment",
+    "title": "Întreaga gamă de produse"
+  },
+  "Delivery": {
+    "badge": "Livrare",
+    "title": "La Fineo Deliver, asigurăm livrarea promptă a pieselor noastre de schimb în toată Ucraina.",
+    "descr": "<p>Opțiunile de livrare disponibile includ Ukrposhta, Nova Poshta, Deliveri, Mist Express, precum și posibilitatea de ridicare. Pentru articolele aflate în stoc, garantăm livrarea în termen de 5 zile, iar articolele personalizate sunt livrate în funcție de un program individual.</p><p>Oferim condiții de plată flexibile, inclusiv plata la livrare prin Nova Poshta și Bridge Express, precum și plăți fără numerar. Pentru a vă confirma comanda, trebuie să plătiți în avans. Plata ramburs este posibilă numai după ce ați convenit termenii cu managerul.</p>"
+  },
+  "Partnership": {
+    "title": "Dezvoltă-ți afacerea cu noi!",
+    "descr": "Programul nostru de dropshipping vă oferă o șansă unică: aveți acces la catalogul nostru extins de piese de schimb fără a avea nevoie de un depozit propriu.",
+    "btn": "Deveniți partener"
+  },
+  "Cta": {
+    "badge": "Faino Deliviri",
+    "title": "Completați cererea pentru selectarea profesională a pieselor de schimb",
+    "descr": "Cel mai important pas în procesul de selectare a pieselor de schimb este să furnizați numărul de șasiu al mașinii dumneavoastră. Acest lucru le permite managerilor noștri să identifice cu exactitate componentele potrivite, oferindu-vă cele mai bune soluții și longevitate pentru echipamentul dumneavoastră specializat."
+  },
+  "Footer": {
+    "copy": "Faino Deliviri. Toate drepturile rezervate."
+  }
+}

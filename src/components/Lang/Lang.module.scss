@@ -1,0 +1,15 @@
+.item {
+  padding: 6px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.429;
+
+  &.link {
+    display: block;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--gray-deep);
+    }
+  }
+}

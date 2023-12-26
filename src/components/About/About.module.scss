@@ -1,0 +1,105 @@
+.about {
+  display: grid;
+
+  @media (width >= 1024px) {
+    grid-template-columns: minmax(300px, 408px) minmax(580px, 690px);
+    gap: 56px;
+    justify-content: space-between;
+  }
+
+  @media (width >= 1200px) {
+    --padding: 48px;
+  }
+
+  @media (width >= 1024px) and (width <= 1199.98px) {
+    --padding: 40px;
+  }
+
+  @media (width >= 576px) and (width <= 1023.98px) {
+    --padding: 32px;
+
+    gap: 24px;
+  }
+
+  @media (width <= 575.98px) {
+    --padding: 24px;
+
+    gap: 16px;
+  }
+
+  &_intro {
+    color: var(--gray);
+
+    @media (width >= 1024px) {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    @media (width >= 576px) and (width <= 1023.98px) {
+      font-size: 18px;
+      line-height: 1.778;
+    }
+  }
+
+  &_descr {
+    font-weight: 500;
+
+    @media (width >= 1024px) {
+      grid-column: 2;
+      font-size: 32px;
+      line-height: 1.313;
+    }
+
+    @media (width >= 576px) and (width <= 1023.98px) {
+      font-size: 28px;
+    }
+
+    @media (width <= 575.98px) {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  }
+
+  &_media {
+    position: relative;
+    display: grid;
+    padding: var(--padding);
+    background: var(--green);
+
+    @media (width >= 576px) {
+      place-content: end end;
+    }
+
+    @media (width >= 1024px) {
+      grid-column: span 2;
+      min-height: 555px;
+    }
+
+    @media (width >= 576px) and (width <= 1023.98px) {
+      min-height: 420px;
+      margin-top: 24px;
+    }
+
+    @media (width <= 575.98px) {
+      row-gap: 48px;
+      margin-top: 32px;
+    }
+  }
+
+  &_label {
+    width: max(133px, 25%);
+    height: auto;
+    aspect-ratio: 298 / 248;
+
+    @media (width >= 576px) {
+      position: absolute;
+      top: var(--padding);
+      left: var(--padding);
+      z-index: 2;
+    }
+
+    @media (width >= 1200px) {
+      margin: 16px;
+    }
+  }
+}
